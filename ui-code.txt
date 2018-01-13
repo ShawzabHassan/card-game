@@ -1,0 +1,25 @@
+/*
+	int i = 0;
+	private void visibleRound() {
+		ArrayList<String> strings = new ArrayList<String>();
+		for (ArrayList<String> list : game.getCardsFromRound().values()) {
+			for (String card : list) {
+				strings.add(card);
+			}
+		}
+		Timeline time = new Timeline();
+		time.setCycleCount(game.cardsPlayed());
+		
+		KeyFrame frame = new KeyFrame(Duration.seconds(1), new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				cpuPane.getChildren().add(new VisibleCard(strings.get(i)));
+				i++;
+			}
+		});
+		time.getKeyFrames().add(frame);
+		time.playFromStart();
+		i = 0;
+		
+	}
+	*/

@@ -1,0 +1,7 @@
+Paskahousu is a Finnish card game. The goal is to be the first player to get rid of their cards. You start out with 5 cards, and play by hitting cards to the table.
+
+The card you hit must be greater in value than the top card on the table. You can hit multiple cards at the same time, if they have the same number, except for 10 and Ace, which are special cards. If you hit either one of those, the table will be cleared out. 10 can be put on top of 9 and lower (excluding 2), and ace on top of jack and higher.
+
+If you clear the table, you can continue your turn. Clearing out the table is useful, because if you don't have any cards you can play, you must take all the cards from the table to your hand. You can try to avoid this by taking the top card from the deck, and if it can be played, you play it, and the next player is up.
+
+2 is also a special card. If 2 is the top card on the table, only another 2 can be put on top of it, so it's effectively the highest value card in the game.
