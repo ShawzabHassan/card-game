@@ -4,6 +4,7 @@ This is a small card game done in Java using the JavaFX library. Main goal was t
 Right now the enemy "AI" is pretty rudimentary and, quite frankly, pretty useless. It basically randomly chooses any number of cards that are allowed to be played, and often times makes very sub-optimal moves.
 
 ## Few things to do in the future:
+* Make the whole logic more event driven
 * Card animations for the AI players
 * Option to start a new game without restarting the program
 * Better AI
