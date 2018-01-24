@@ -147,7 +147,7 @@ public class GameController implements Initializable {
 
 
 	/**
-	 * Päivitetään käyttöliittymä jokaisen kierroksen jälkeen
+	 * Updates the GUI after each round
 	 */
 	private void round() {
 		game.cpuRound();
@@ -157,10 +157,10 @@ public class GameController implements Initializable {
 
 
 	/**
-	 * Ottaa kortti-objektin ja tekee siitä käyttöliittymässä näkyvän kortin, sekä
-	 * lisää kuuntelijan jolla kortti voidaan valita sitä klikkaamalla.
-	 * @param c
-	 * @return
+	 * Makes a visible card corresponding to a card object, and adds a listener for selecting
+	 * the card
+	 * @param c card object which the visible card is based on
+	 * @return Visible card object
 	 */
 	private VisibleCard createVisibleCard(Card c) {
 		VisibleCard kGUI = new VisibleCard(c.toString());
@@ -171,10 +171,10 @@ public class GameController implements Initializable {
 
 
 	/**
-	 * Lisätään kortti valittujen joukkoon ja muutetaan sitä vastaava käyttöliittymän kuva
-	 * asianmukaisesti
-	 * @param c valittava kortti
-	 * @param kGUI korttia vastaava käyttöliittymäobjekti
+	 * Adds a card to the list of selected cards and changes the visible card object
+	 * accordingly
+	 * @param c card to be selected
+	 * @param kGUI visible card object bound to the card
 	 */
 	public void valitse(Card c, VisibleCard kGUI) {
 		kGUI.select();
@@ -184,7 +184,7 @@ public class GameController implements Initializable {
 
 
 	/**
-	 * Tarkistetaan, voiko pelaaja tehdä siirron, ja muutetaan pelaa-nappi sen mukaisesti
+	 * Checks if player is allowed to play, and changes the play button accordingly
 	 */
 	private void teeTarkistukset() {
 		if (game.checkSelection()) {
